@@ -13,9 +13,9 @@ if (cluster.isMaster && !module.parent) {
       console.log('worker ' + worker.process.pid + ' died');
     });
 } else {
-    app = require('../app');
+    app = require('./server.js');
 
-    server = app.listen(3002, '127.0.0.1', function () {
+    server = app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function () {
         var host = server.address().address,
             port = server.address().port;
 

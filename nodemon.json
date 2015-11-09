@@ -11,7 +11,10 @@
   },
   "watch": [
     "test/",
-    "bin/"
+    "config/",
+    "controllers/",
+    "models/",
+    "helpers/",
   ],
   "env": {
     "NODE_ENV": "development"
