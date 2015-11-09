@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
  
-var mongoIP = process.env.IP;
+var mongoIP = process.env.IP || 'localhost';
 
 var mongoPort = 27017;
 

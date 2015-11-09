@@ -14,7 +14,7 @@
     "config/",
     "controllers/",
     "models/",
-    "helpers/",
+    "helpers/"
   ],
   "env": {
     "NODE_ENV": "development"
